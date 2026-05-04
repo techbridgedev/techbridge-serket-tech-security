@@ -51,11 +51,13 @@ Nonprofit-appropriate pricing. Built for your constraints.
 
 </div>
 
-## Case study
+## What happened when a social justice nonprofit got hacked
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+In 2023, a legal aid organization serving low-income clients <span style="color:chartreuse">[*who?*]</span> experienced a ransomware attack that locked them out of their case management system for eleven days. Client hearings were missed. Evidence was delayed. Families in active eviction proceedings had nowhere to turn.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The organization had no dedicated IT staff. Their security was whatever came with their software subscriptions.
+
+This story isn’t unusual. Social justice nonprofits are increasingly targeted&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;not despite the sensitive nature of their work, but because of it.
 
 [Read the full case study](#).
 
@@ -63,7 +65,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 No pressure. No sales pitch. Just a 20-minute conversation about where your organization stands.
 
-[FORM EMBED]
+<div id="fa-contact-form">
+</div>
 
 ## Free webinar MMMM DD, YYYY
 
