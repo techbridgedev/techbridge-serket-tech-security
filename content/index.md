@@ -9,7 +9,7 @@ Your clients trust you with their most sensitive information. TechBridge and Ser
 
 <a class="button" href="#let-s-talk">Talk to Us ↓</a>
 
-<cluster-l justify="space-between" align="top" gap="1rem" id="cards">
+<cluster-l justify="space-between" gap="2rem" id="cards">
   <stack-l space="1rem" class="card">
 
 ### Who we serve
@@ -28,7 +28,7 @@ Endpoint protection, GRC, compliance, security assessments
 
 ### Pricing
 
-Nonprofit-appropriate pricing. Built for your constraints.
+Nonprofit-appropriate pricing. Built for your constraints
 
   </stack-l>
 </cluster-l>

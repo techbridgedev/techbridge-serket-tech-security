@@ -346,6 +346,9 @@ nav {
 
 .card {
 	inline-size: clamp(25ch, 25%, 80ch);
+	padding: 1.25rem;
+	border: 1px solid var(--text-color);
+	border-radius: .75rem;
 }
 
 .ol li {
