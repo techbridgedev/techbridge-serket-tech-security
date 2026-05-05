@@ -15,6 +15,9 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy({
 			"./public/": "/"
 		})
+		.addPassthroughCopy({
+			"./assets/favicon": "/"
+		})
 		.addPassthroughCopy("./assets/");
 
 	// Run Eleventy when these files change:

@@ -358,3 +358,7 @@ nav {
 .subhed {
 	font-style: italic;
 }
+
+.important {
+	font-weight: 700;
+}

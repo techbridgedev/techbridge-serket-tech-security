@@ -37,15 +37,15 @@ Nonprofit-appropriate pricing. Built for your constraints
 
 <div class="ol">
 
-1. Your clients’ data is more sensitive than most
+1. <span class="important">Your clients’ data is more sensitive than most</span>
 
     Case records, immigration status, legal proceedings&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;a breach isn’t just a compliance issue. It’s a safety issue.
 
-1. Funders are starting to require it
+1. <span class="important">Funders are starting to require it</span>
 
     NIST frameworks and data protection policies are becoming grant compliance requirements. Get ahead of it.
 
-1. You don’t need enterprise software&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;you need the right partner
+1. <span class="important">You don’t need enterprise software&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;you need the right partner</span>
   
     We understand nonprofit constraints. No overselling. No jargon. Just protection that fits.
 
