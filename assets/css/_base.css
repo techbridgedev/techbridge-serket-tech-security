@@ -46,6 +46,8 @@
 	--text-color-link-active: var(--color-gray-90);
 
 	--syntax-tab-size: 2;
+
+	--separator: 1px dashed var(--color-gray-20);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -99,7 +101,7 @@ header a {
 #header-logo-tb,
 #header-logo-serket {
 	display: inline-block;
-	inline-size: clamp(64px, 128px, 100%);
+	inline-size: clamp(64px, 196px, 100%);
 	block-size: auto;
 }
 
@@ -107,16 +109,16 @@ header a {
 .visually-hidden:not(:focus):not(:active) {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
-	height: 1px;
+	inline-size: 1px;
+	block-size: 1px;
 	overflow: hidden;
 	position: absolute;
 	white-space: nowrap;
-	width: 1px;
 }
 
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
 img{
-  max-width: 100%;
+  max-inline-size: 100%;
 }
 
 img[width][height] {
@@ -126,7 +128,7 @@ img[width][height] {
 img[src$=".svg"] {
   width: 100%;
   height: auto;
-  max-width: none;
+  max-inline-size: none;
 }
 
 video,
@@ -140,7 +142,7 @@ iframe {
 }
 
 p:last-child {
-	margin-bottom: 0;
+	margin-block-end: 0;
 }
 
 p {
@@ -166,7 +168,7 @@ footer {
 }
 
 main :first-child {
-	margin-top: 0;
+	margin-block-start: 0;
 }
 
 main {
@@ -174,7 +176,12 @@ main {
 }
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
+	border-block-end: var(--separator);
+}
+
+footer {
+	margin-block-start: 1rem;
+	border-block-start: var(--separator);
 }
 
 #skip-link {
@@ -189,8 +196,8 @@ header {
 /* Prevent visually-hidden skip link fom pushing content around when focused */
 #skip-link.visually-hidden:focus {
 	position: absolute;
-	top: 1rem;
-	left: 1rem;
+	inset-block-start: 1rem;
+	inset-inline-start: 1rem;
 	/* Ensure it is positioned on top of everything else when it is shown */
 	z-index: 999;
 }
@@ -210,7 +217,7 @@ pre:not([class*="language-"]) {
 	-ms-hyphens: none;
 	hyphens: none;
 	direction: ltr;
-	text-align: left;
+	text-align: inline-start;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
@@ -231,16 +238,6 @@ header {
 	padding-block: 1em;
 }
 
-.home-link {
-	flex-grow: 1;
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-}
-
-.home-link:link:not(:hover) {
-	text-decoration: none;
-}
-
 nav {
 	font-family: var(--font-family-sans);
 	font-weight: 700;
@@ -250,16 +247,20 @@ nav {
 	display: inline-block;
 }
 
-.button {
+.button,
+.wFormContainer .actions input.primaryAction {
 	display: inline-block;
   padding: 1rem 1.25rem;
 	border: 1px solid var(--color-gray-90);
 	border-radius: .75rem;
 	font-family: var(--font-family-sans);
 	font-weight: 700;
+  font-size: 1rem;
 	text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 	text-decoration: none;
+  color: var(--text-color-link);
+  background-color: transparent;
 }
 
 #cards stack-l {

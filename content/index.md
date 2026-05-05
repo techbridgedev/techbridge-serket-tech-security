@@ -1,8 +1,10 @@
 <hgroup>
+  <stack-l space="1rem">
 
 # Operation Safe Harbor
 
 <p class="subhed">Protecting the mission&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;and the people behind it</p>
+  </stack-l>
 </hgroup>
 
 Your clients trust you with their most sensitive information. TechBridge and Serket-Tech are here to help you protect it&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;affordably, practically, and without the enterprise price tag.
