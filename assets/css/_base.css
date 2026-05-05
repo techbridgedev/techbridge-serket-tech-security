@@ -282,10 +282,6 @@ nav {
 	font-style: italic;
 }
 
-.important {
-	font-weight: 700;
-}
-
 :focus-visible {
 	outline-offset: .25rem;
 }

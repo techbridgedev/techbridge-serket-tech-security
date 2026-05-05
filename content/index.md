@@ -39,15 +39,15 @@ Nonprofit-appropriate pricing. Built for your constraints
 
 <div class="ol">
 
-1. <span class="important">Your clients’ data is more sensitive than most</span>
+1. <h4>Your clients’ data is more sensitive than most</h4>
 
     Case records, immigration status, legal proceedings&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;a breach isn’t just a compliance issue. It’s a safety issue.
 
-1. <span class="important">Funders are starting to require it</span>
+2. <h4>Funders are starting to require it</h4>
 
     NIST frameworks and data protection policies are becoming grant compliance requirements. Get ahead of it.
 
-1. <span class="important">You don’t need enterprise software&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;you need the right partner</span>
+3. <h4>You don’t need enterprise software&zwj;&hairsp;&zwj;—&zwj;&hairsp;&zwj;you need the right partner</h4>
   
     We understand nonprofit constraints. No overselling. No jargon. Just protection that fits.
 
@@ -66,6 +66,8 @@ This story isn’t unusual. Social justice nonprofits are increasingly targeted&
 ## Let’s Talk
 
 No pressure. No sales pitch. Just a 20-minute conversation about where your organization stands.
+
+<em>All form fields are required.</em>
 
 <div id="fa-contact-form">
 </div>
