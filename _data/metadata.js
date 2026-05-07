@@ -1,7 +1,7 @@
 export default {
 	title: "Techbridge + Serket-Tech Security",
 	url: "https://cyber.techbridge.org/",
-	language: "en",
+	language: "en-US",
 	description: "A Techbridge + Serket-Tech Security collaboration.",
 	author: {
 		name: "Techbridge Inc.",
