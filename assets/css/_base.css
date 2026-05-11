@@ -58,6 +58,7 @@
   --size-s5: 2rem;
 
   --corner-radius-1x: var(--size-s1);
+	--corner-shape: squircle;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -200,7 +201,8 @@ footer {
 	color: var(--text-color);
 	padding: var(--size-s-1) var(--size-s1);
 	border: 1px solid var(--color-gray-90);
-	border-radius: 2px;
+	border-radius: var(--corner-radius-1x);
+	corner-shape: var(--corner-shape);
 }
 
 /* Prevent visually-hidden skip link fom pushing content around when focused */
@@ -263,6 +265,7 @@ nav {
   padding: var(--size-s1) var(--size-s2);
 	border: 1px solid var(--color-gray-90);
 	border-radius: var(--corner-radius-1x);
+	corner-shape: var(--corner-shape);
 	font-family: var(--font-family-sans);
 	font-weight: 700;
   font-size: var(--size-s1);
@@ -282,6 +285,7 @@ nav {
 	padding: var(--size-s2);
 	border: 1px solid var(--text-color);
 	border-radius: var(--corner-radius-1x);
+	corner-shape: var(--corner-shape);
 }
 
 .ol li {
