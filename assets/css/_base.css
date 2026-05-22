@@ -168,6 +168,8 @@ a[href] {
 	color: var(--text-color-link);
 }
 
+a[href]
+
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
@@ -263,17 +265,40 @@ nav {
 .wFormContainer .actions input.primaryAction {
 	display: inline-block;
   padding: var(--size-s1) var(--size-s2);
+	max-inline-size: fit-content;
 	border: 1px solid var(--color-gray-90);
 	border-radius: var(--corner-radius-1x);
 	corner-shape: var(--corner-shape);
 	font-family: var(--font-family-sans);
 	font-weight: 700;
-  font-size: var(--size-s1);
+  font-size: var(--size-s2);
+	text-transform:lowercase;
+	font-variant: small-caps;
 	text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 	text-decoration: none;
   color: var(--text-color-link);
   background-color: transparent;
+}
+
+@media screen and (prefers-color-scheme: light),
+@media screen and (prefers-color-scheme: no-preference) {
+	.wFormContainer .actions input.primaryAction {
+		color: var(--background-color);
+		border: 1px solid var(--color-gray-20);
+	}
+}
+
+.wFormContainer .wForm .label,
+.wFormContainer .field-hint-inactive {
+	font-family: var(--font-family-sans);
+}
+
+.wFormContainer input[type=radio] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+	margin-inline-end: .5em;
 }
 
 #cards stack-l {
@@ -298,4 +323,34 @@ nav {
 
 :focus-visible {
 	outline-offset: .25rem;
+}
+
+button icon-l {
+	text-box-trim: trim-both;
+	text-box-edge: cap alphabetic;
+}
+
+icon-l svg {
+
+}
+
+[data-i="Icon-0.5em"] {
+	align-items: center!important;
+}
+
+.svg-inline {
+	display: inline-block;
+  height: 1em;
+  height: 1.5cap;
+  width: 1em;
+  width: 1.5cap;
+	vertical-align: middle;
+
+	&.after {
+		margin-inline-start: .5em;
+	}
+
+	&.before {
+		margin-inline-end: .5em;
+	}
 }

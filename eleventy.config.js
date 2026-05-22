@@ -1,5 +1,7 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import markdownIt from "markdown-it";
+import mdFN from 'markdown-it-footnote';
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
@@ -8,6 +10,23 @@ import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+
+	// For Markdown attributes
+	const mdOpts = {
+		html: true,
+		breaks: true,
+		linkify: true
+	};
+
+  // Markdown library with options
+  const markdownLib = (mdLib) =>
+    mdLib.use(mdFN);
+
+  // Enable the markdown-it plugin with options from above
+  eleventyConfig.setLibrary(`md`, markdownIt(mdOpts));
+  // Extend markdown-it via plugins; see https://www.11ty.dev/docs/languages/markdown/#optional-set-your-own-library-instance
+  // Most tutorials are written for Eleventy 1.0.0 and use the wrong syntax for v2.0.0 and later
+  eleventyConfig.amendLibrary(`md`, markdownLib);
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
