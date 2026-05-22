@@ -127,6 +127,22 @@ header a {
 	white-space: nowrap;
 }
 
+p {
+	text-wrap: pretty;
+	hyphenate-limit-chars: 6 3 3;
+	orphans: 3;
+	widows: 3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
 img{
   max-inline-size: 100%;
