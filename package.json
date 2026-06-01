@@ -1,6 +1,6 @@
 {
   "name": "techbridge-serket-tech-security",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "A collaboration between Techbridge & Serket-Tech Security.",
   "type": "module",
   "scripts": {
@@ -34,7 +34,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "cross-env": "^10.1.0",
     "luxon": "^3.7.2",
-    "markdown-it": "^14.1.1",
+    "markdown-it": "^14.2.0",
     "markdown-it-footnote": "^4.0.0",
     "prismjs": "^1.30.0"
   },
