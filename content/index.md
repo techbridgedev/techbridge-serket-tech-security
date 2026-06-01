@@ -43,7 +43,7 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
 
 ### Pricing
 
-  Nonprofit-appropriate pricing. Built for your constraints
+  Nonprofit-appropriate pricing, built for your constraints
 
   </stack-l>
   </cluster-l>
