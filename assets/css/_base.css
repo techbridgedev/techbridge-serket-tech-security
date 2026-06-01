@@ -44,11 +44,11 @@
 	--bg-color: var(--color-mint);
 	--bg-color-alt: var(--color-teal);
 
-	--text-color: var(--color-navy);
-	--text-color-link: var(--color-blue);
-	--text-color-link-active: var(--color-navy);
+	--color-text: var(--color-navy);
+	--color-text-link: var(--color-blue);
+	--color-text-link-active: var(--color-navy);
 
-	--separator: 1px dashed var(--text-color-link);
+	--separator: 1px dashed var(--color-text-link);
 
 	--syntax-tab-size: 2;
 
@@ -66,14 +66,12 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-gray-90: #e0e0e0;
-
 		--bg-color: var(--color-navy);
 		--bg-color-alt: var(--color-blue);
 
-		--text-color: var(--color-mint);
-		--text-color-link: var(--color-teal);
-		--text-color-link-active: var(--color-mint);
+		--color-text: var(--color-mint);
+		--color-text-link: var(--color-teal);
+		--color-text-link-active: var(--color-mint);
 
 	}
 }
@@ -97,7 +95,7 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: var(--font-family);
-	color: var(--text-color);
+	color: var(--color-text);
 	background-color: var(--bg-color);
 }
 
@@ -194,14 +192,14 @@ li {
 }
 
 a[href] {
-	color: var(--text-color-link);
+	color: var(--color-text-link);
 }
 
 a[href]
 
 a[href]:hover,
 a[href]:active {
-	color: var(--text-color-link-active);
+	color: var(--color-text-link-active);
 }
 
 header,
@@ -223,7 +221,7 @@ footer {
 #skip-link {
 	text-decoration: none;
 	background: var(--bg-color);
-	color: var(--text-color);
+	color: var(--color-text);
 	padding: var(--s-1) var(--s1);
 	border: 1px solid var(--color-gray-90);
 	border-radius: var(--corner-radius-1x);
@@ -304,7 +302,7 @@ center-l:not(:has(>.bg-color-alt)) {
 	display: inline-block;
   padding: var(--s1) var(--s2);
 	max-inline-size: fit-content;
-	border: 1px solid var(--color-gray-90);
+	border: 1px solid var(--color-text-link);
 	border-radius: var(--corner-radius-1x);
 	corner-shape: var(--corner-shape);
 	font-family: var(--font-family-sans);
@@ -315,14 +313,19 @@ center-l:not(:has(>.bg-color-alt)) {
 	text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 	text-decoration: none;
-  color: var(--text-color-link);
+  color: var(--color-text-link);
   background-color: transparent;
+}
+
+.button:hover {
+	color: var(--bg-color-alt);
+	background-color: var(--color-text);
 }
 
 @media screen and (prefers-color-scheme: light) {
 	.wFormContainer .actions input.primaryAction {
 		color: var(--bg-color);
-		border: 1px solid var(--color-blue);
+		border: 1px solid var(--color-teal);
 	}
 }
 @media screen and (prefers-color-scheme: no-preference) {
@@ -351,7 +354,7 @@ center-l:not(:has(>.bg-color-alt)) {
 .card {
 	inline-size: clamp(25ch, 25%, 80ch);
 	padding: var(--s2);
-	border: 1px solid var(--text-color);
+	border: 1px solid var(--color-text);
 	border-radius: var(--corner-radius-1x);
 	corner-shape: var(--corner-shape);
 }
@@ -409,5 +412,5 @@ icon-l svg {
 	max-width: 80ch;
 	margin: auto;
 	border-style: dashed;
-	border-color: var(--text-color-link);
+	border-color: var(--color-text-link);
 }
