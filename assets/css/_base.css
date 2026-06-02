@@ -105,7 +105,7 @@ html {
 
 center-l {
 	inline-size: 100%;
-	margin-block: var(--s5);
+	margin-block: clamp(var(--s-1), 5%, var(--s5));
 }
 
 header a {
@@ -284,14 +284,13 @@ nav {
 }
 
 .bg-color-alt {
-	padding-inline: clamp(var(--s-1), 5%, var(--s5));
-	padding-block: var(--s5);
+	padding: clamp(var(--s-1), 5%, var(--s5));
 	background-color: var(--bg-color-alt);
 	border-radius: var(--corner-radius-1x);
 }
 
 center-l:not(:has(>.bg-color-alt)) {
-	padding-block: var(--s5);
+	padding-block: clamp(var(--s-1), 5%, var(--s5));
 
 	&#header-wrapper {
 		padding-block: 0;
@@ -409,12 +408,13 @@ icon-l svg {
 	max-inline-size: 80ch;
 }
 
-.footnotes-sep {
-	width: 100%;
-	max-width: 80ch;
-	margin: auto;
-	border-style: dashed;
-	border-color: var(--color-text-link);
+hr.footnotes-sep {
+	inline-size: 100%;
+	max-inline-size: 100ch;
+	margin-inline: auto;
+	margin-block-start: 2.5rem;
+	border-block-start: var(--separator);
+	border-block-end: 1px solid var(--bg-color);
 }
 
 heading-anchors:not(:defined) :is(h2,h3,h4,h5,h6):after {
