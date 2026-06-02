@@ -115,7 +115,7 @@ header a {
 #header-logo-tb,
 #header-logo-serket {
 	display: inline-block;
-	inline-size: clamp(64px, 196px, 100%);
+	inline-size: clamp(64px, 30dvi, 196px);
 	block-size: auto;
 }
 
