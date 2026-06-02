@@ -132,6 +132,7 @@ header a {
 
 p {
 	text-wrap: pretty;
+	hyphens: auto;
 	hyphenate-limit-chars: 6 3 3;
 	orphans: 3;
 	widows: 3;
@@ -217,6 +218,8 @@ header {
 footer {
 	margin-block-start: var(--s1);
 	border-block-start: var(--separator);
+	font-family: var(--font-family-sans);
+	font-weight: 550;
 }
 
 #skip-link {
