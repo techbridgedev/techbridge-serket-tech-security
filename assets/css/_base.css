@@ -152,6 +152,7 @@ h4,
 h5,
 h6 {
 	text-wrap: balance;
+	line-height: 1;
 }
 
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
@@ -283,6 +284,7 @@ nav {
 }
 
 .bg-color-alt {
+	padding-inline: clamp(var(--s-1), 5%, var(--s5));
 	padding-block: var(--s5);
 	background-color: var(--bg-color-alt);
 	border-radius: var(--corner-radius-1x);
