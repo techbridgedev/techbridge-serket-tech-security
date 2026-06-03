@@ -62,6 +62,8 @@
 
   --corner-radius-1x: var(--s1);
 	--corner-shape: squircle;
+
+	--font-size-base: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -136,6 +138,7 @@ p {
 	hyphenate-limit-chars: 6 3 3;
 	orphans: 3;
 	widows: 3;
+	font-size: var(--font-size-base);
 
 	&:empty {
 		width: 0;
@@ -157,7 +160,7 @@ h6 {
 }
 
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
-img{
+img {
   max-inline-size: 100%;
 }
 
@@ -193,6 +196,14 @@ li {
 	line-height: 1.5;
 }
 
+dl, ol, ul {
+	font-size: var(--font-size-base);
+}
+
+small {
+	font-size: 16px;
+}
+
 a[href] {
 	color: var(--color-text-link);
 }
@@ -214,6 +225,7 @@ aside {
 
 header {
 	border-block-end: var(--separator);
+	font-size: var(--font-size-base);
 }
 
 footer {
