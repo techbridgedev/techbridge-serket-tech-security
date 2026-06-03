@@ -112,7 +112,7 @@ No pressure. No sales pitch. Just a 20-minute conversation about where your orga
   <center-l max="80ch">
   <stack-l space="1rem">
 
-## Free webinar MMMM DD, YYYY
+## Free webinar <time datetime="2026-09">September 2026</time>
 
 Protecting the people nonprofits serve: a free conversation for nonprofit leaders on practical cybersecurity. No sales pitch. No jargon.
 

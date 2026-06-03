@@ -37,8 +37,8 @@
 :root {
 	--color-navy: oklch(25.82% 0.1211 275.62);
 	--color-blue: oklch(45.65% 0.2913 273.09);
-	--color-mint: oklch(94.66% 0.064 148.46);
-	--color-teal: oklch(92.29% 0.109 147.56);
+	--color-mint: oklch(92.29% 0.109 147.56);
+	--color-teal: oklch(76.14% 0.1295 197.95);
 	--color-magenta: oklch(67.38% 0.30545463132006684 331.0859131196989);
 
 	--bg-color: var(--color-mint);
@@ -206,7 +206,8 @@ a[href]:active {
 
 header,
 footer,
-main {
+main,
+aside {
 	padding-inline: clamp(var(--s-1), 5%, var(--s5));
 	padding-block: var(--s1);
 }
@@ -301,6 +302,10 @@ center-l:not(:has(>.bg-color-alt)) {
 	}
 }
 
+.sidebar {
+	border-inline-start: 1px dashed var(--color-text-link);
+}
+
 .button,
 .wFormContainer .actions input.primaryAction {
 	display: inline-block;
@@ -321,22 +326,14 @@ center-l:not(:has(>.bg-color-alt)) {
   background-color: transparent;
 }
 
-.button:hover {
+.button:hover,
+.wFormContainer .actions input.primaryAction:hover {
 	color: var(--bg-color-alt);
 	background-color: var(--color-text);
 }
 
-@media screen and (prefers-color-scheme: light) {
-	.wFormContainer .actions input.primaryAction {
-		color: var(--bg-color);
-		border: 1px solid var(--color-teal);
-	}
-}
-@media screen and (prefers-color-scheme: no-preference) {
-		.wFormContainer .actions input.primaryAction {
-		color: var(--bg-color);
-		border: 1px solid var(--color-blue);
-	}
+form {
+	background-color: var(--bg-color);
 }
 
 .wFormContainer .wForm .label,

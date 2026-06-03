@@ -5,13 +5,15 @@
   <body>
     <a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
-    <center-l max="100ch" id="header-wrapper">
+    <center-l max="120ch" id="header-wrapper">
       {% include "layouts/_header.njk" %}
     </center-l>
+    <sidebar-l side="right" sideWidth="40ch">
+      {% include "layouts/_main.njk" %}
+      {% include "layouts/_sidebar.njk" %}
+    </sidebar-l>
 
-    {% include "layouts/_main.njk" %}
-
-    <center-l max="100ch">
+    <center-l max="120ch">
       {% include "layouts/_footer.njk" %}
     </center-l>
 
