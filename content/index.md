@@ -1,4 +1,4 @@
-<center-l max="80ch">
+<center-l max="70ch" class="wrapper">
 <stack-l space="1rem">
 <hgroup>
 <stack-l space="1rem">
@@ -17,12 +17,15 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
 </stack-l>
 </center-l>
 
-<div class="bg-color-alt">
-  <center-l max="80ch">
+<div class="bg-color-alt cards-wrapper">
+  <center-l max="95%">
 
 <stack-l space="1rem">
+  <center-l max="70ch">
 
 ## Key points
+
+  </center-l>
 
   <cluster-l justify="space-between" gap="2rem" id="cards">
     <stack-l space="1rem" class="card">
@@ -50,7 +53,7 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
   </stack-l>
   </center-l>
 </div>
-<center-l max="80ch">
+<center-l max="70ch" class="wrapper">
   <stack-l space="1rem">
 
 ## Why this matters for your organization
@@ -72,7 +75,7 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
   </stack-l>
 </center-l>
 <div class="bg-color-alt">
-<center-l max="80ch">
+<center-l max="70ch">
   <stack-l space="1rem">
 
 ## What happened when a social justice nonprofit got hacked
@@ -95,7 +98,7 @@ For most people, that is an aggravating delay. For Jane, it meant staying in dan
   </stack-l>
 </center-l>
 </div>
-<center-l max="80ch">
+<center-l max="70ch" class="wrapper">
   <stack-l space="1rem">
 
 ## Let’s Talk
@@ -109,7 +112,7 @@ No pressure. No sales pitch. Just a 20-minute conversation about where your orga
   </stack-l>
 </center-l>
 <div class="bg-color-alt">
-  <center-l max="80ch">
+  <center-l max="70ch">
   <stack-l space="1rem">
 
 ## Free webinar <time datetime="2026-09">September 2026</time>
