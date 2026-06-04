@@ -1,12 +1,13 @@
-<center-l max="70ch" class="wrapper">
-<stack-l space="1rem">
+<center-l max="70ch" class="wrapper first">
+ <stack-l space="var(--s0)">
 <hgroup>
-<stack-l space="1rem">
+ <stack-l space="var(--s0)">
 
 # Operation Safe Harbor
 
   <p class="subhed">Protecting the mission and the people behind it</p>
-</stack-l></hgroup>
+</stack-l>
+</hgroup>
 
 Your clients trust you with their most sensitive information. Techbridge and Serket-Tech are here to help you protect it affordably, practically, and without the enterprise price tag.
 
@@ -20,7 +21,7 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
 <div class="bg-color-alt cards-wrapper">
   <center-l max="95%">
 
-<stack-l space="1rem">
+ <stack-l space="var(--s0)">
   <center-l max="70ch">
 
 ## Key points
@@ -28,21 +29,21 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
   </center-l>
 
   <cluster-l justify="space-between" gap="2rem" id="cards">
-    <stack-l space="1rem" class="card">
+    <stack-l class="card">
 
 ### Who we serve
 
   Hunger relief, housing, legal aid, and workforce development nonprofits
 
   </stack-l>
-  <stack-l space="1rem" class="card">
+  <stack-l class="card">
 
 ### What we offer
 
-  Endpoint protection, GRC, compliance, and security assessments
+  Endpoint protection, <abbr title="governance, risk, & compliance">GRC</abbr>, and security assessments
 
   </stack-l>
-  <stack-l space="1rem" class="card">
+  <stack-l class="card">
 
 ### Pricing
 
@@ -54,7 +55,7 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
   </center-l>
 </div>
 <center-l max="70ch" class="wrapper">
-  <stack-l space="1rem">
+   <stack-l space="var(--s0)">
 
 ## Why this matters for your organization
 
@@ -76,7 +77,7 @@ Your clients trust you with their most sensitive information. Techbridge and Ser
 </center-l>
 <div class="bg-color-alt">
 <center-l max="70ch">
-  <stack-l space="1rem">
+   <stack-l space="var(--s0)">
 
 ## What happened when a social justice nonprofit got hacked
 
@@ -99,7 +100,7 @@ For most people, that is an aggravating delay. For Jane, it meant staying in dan
 </center-l>
 </div>
 <center-l max="70ch" class="wrapper">
-  <stack-l space="1rem">
+   <stack-l space="var(--s0)">
 
 ## Let’s talk
 
@@ -113,7 +114,7 @@ No pressure. No sales pitch. Just a 20-minute conversation about where your orga
 </center-l>
 <div class="bg-color-alt">
   <center-l max="70ch">
-  <stack-l space="1rem">
+   <stack-l space="var(--s0)">
 
 ## Free webinar <time datetime="2026-09">September 2026</time>
 

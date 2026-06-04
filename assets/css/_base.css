@@ -33,7 +33,6 @@
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
-/* Theme colors */
 :root {
 	--color-navy: oklch(25.82% 0.1211 275.62);
 	--color-blue: oklch(45.65% 0.2913 273.09);
@@ -52,13 +51,17 @@
 
 	--syntax-tab-size: 2;
 
-  --s-1: .5rem;
-  --s0: .75rem;
-  --s1: 1rem;
-  --s2: 1.25rem;
-  --s3: 1.5rem;
-  --s4: 1.75rem;
-  --s5: 2rem;
+  --s-5: clamp(0.33rem, 0.39rem + -0.29vw, 0.18rem);
+  --s-4: clamp(0.41rem, 0.47rem + -0.31vw, 0.25rem);
+  --s-3: clamp(0.51rem, 0.57rem + -0.31vw, 0.35rem);
+  --s-2: clamp(0.64rem, 0.69rem + -0.27vw, 0.5rem);
+  --s-1: clamp(0.8rem, 0.84rem + -0.18vw, 0.71rem);
+  --s0: clamp(1rem, 1rem + 0vw, 1rem);
+  --s1: clamp(1.25rem, 1.19rem + 0.32vw, 1.41rem);
+  --s2: clamp(1.56rem, 1.39rem + 0.85vw, 2rem);
+  --s3: clamp(1.95rem, 1.61rem + 1.7vw, 2.83rem);
+  --s4: clamp(2.44rem, 1.83rem + 3.04vw, 4rem);
+  --s5: clamp(3.05rem, 2.04rem + 5.07vw, 5.65rem);
 
 	--measure-dynamic: clamp(var(--s-1), 5%, var(--s5));
 
@@ -120,6 +123,12 @@ header a {
 	display: inline-block;
 	inline-size: clamp(64px, 30dvi, 196px);
 	block-size: auto;
+}
+
+.header-logo-sep {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 700;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -314,6 +323,10 @@ nav {
 		padding-block: 0;
 		margin-block: 0;
 	}
+
+	&.first {
+		margin-block-start: 0;
+	}
 }
 
 .brochure-wrapper {
@@ -347,7 +360,7 @@ nav {
 	corner-shape: var(--corner-shape);
 	font-family: var(--font-family-sans);
 	font-weight: 700;
-  font-size: var(--s2);
+  font-size: var(--s1);
 	text-transform:lowercase;
 	font-variant: small-caps;
 	text-box-trim: trim-both;
@@ -397,18 +410,36 @@ form {
 
 @container cards (width > 62ch) {
 	.card {
-		inline-size: 48%;
+		inline-size: 47%;
 	}
 }
 
 @container cards (width > 93ch) {
 	.card {
-		inline-size: 32%;
+		inline-size: 31%;
 	}
 }
 
 .ol li {
 	margin-block-end: var(--s1);
+}
+
+abbr:hover {
+	cursor: pointer;
+}
+
+@media (pointer: coarse) {
+	abbr {
+		text-decoration: none;
+
+		&::before {
+			content: attr(title) ' (';
+		}
+
+		&::after {
+			content: ')';
+		}
+	}
 }
 
 .subhed {
