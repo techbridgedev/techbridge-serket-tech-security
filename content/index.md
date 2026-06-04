@@ -101,7 +101,7 @@ For most people, that is an aggravating delay. For Jane, it meant staying in dan
 <center-l max="70ch" class="wrapper">
   <stack-l space="1rem">
 
-## Let’s Talk
+## Let’s talk
 
 No pressure. No sales pitch. Just a 20-minute conversation about where your organization stands.
 

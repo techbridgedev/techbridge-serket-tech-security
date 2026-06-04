@@ -1,6 +1,6 @@
 {
   "name": "techbridge-serket-tech-security",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "A collaboration between Techbridge & Serket-Tech Security.",
   "type": "module",
   "scripts": {
@@ -27,7 +27,7 @@
     "node": ">=18"
   },
 	"devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
