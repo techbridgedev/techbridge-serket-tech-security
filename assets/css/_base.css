@@ -341,7 +341,7 @@ nav {
 	border-radius: var(--corner-radius-1x);
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 80ch) {
 
 	.sidebar {
 		border-inline-start: 1px dashed var(--color-text-link);
