@@ -34,6 +34,8 @@
 }
 
 :root {
+	--color-gray-20: oklch(0.9067 0 0);
+	--color-gray-80: oklch(0.3211 0 0);
 	--color-navy: oklch(25.82% 0.1211 275.62);
 	--color-blue: oklch(45.65% 0.2913 273.09);
 	--color-mint: oklch(92.29% 0.109 147.56);
@@ -42,10 +44,13 @@
 
 	--bg-color: var(--color-mint);
 	--bg-color-alt: var(--color-teal);
+	--bg-color-footer: var(--color-magenta);
 
 	--color-text: var(--color-navy);
 	--color-text-link: var(--color-blue);
 	--color-text-link-active: var(--color-navy);
+
+	--color-logo-block: var(--color-blue);
 
 	--separator: 1px dashed var(--color-text-link);
 
@@ -75,10 +80,13 @@
 	:root {
 		--bg-color: var(--color-navy);
 		--bg-color-alt: var(--color-blue);
+		--bg-color-footer: var(--color-blue);
 
 		--color-text: var(--color-mint);
 		--color-text-link: var(--color-teal);
 		--color-text-link-active: var(--color-mint);
+
+		--color-logo-block: var(--color-gray-20);
 
 	}
 }
@@ -126,6 +134,7 @@ header a {
 }
 
 .header-logo-sep {
+	color: var(--color-logo-block);
 	display: inline-block;
 	font-size: 2rem;
 	font-weight: 700;
@@ -241,6 +250,7 @@ header {
 footer {
 	margin-block-start: var(--s1);
 	border-block-start: var(--separator);
+	background-color: var(--bg-color-footer);
 	font-family: var(--font-family-sans);
 	font-weight: 550;
 }
@@ -250,7 +260,7 @@ footer {
 	background: var(--bg-color);
 	color: var(--color-text);
 	padding: var(--s-1) var(--s1);
-	border: 1px solid var(--color-gray-90);
+	border: 1px solid var(--color-gray-20-90);
 	border-radius: var(--corner-radius-1x);
 	corner-shape: var(--corner-shape);
 }
