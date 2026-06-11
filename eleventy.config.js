@@ -1,6 +1,7 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import markdownIt from "markdown-it";
+import mdAttrs from 'markdown-it-attrs';
 import mdFN from 'markdown-it-footnote';
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
@@ -20,7 +21,7 @@ export default async function(eleventyConfig) {
 
   // Markdown library with options
   const markdownLib = (mdLib) =>
-    mdLib.use(mdFN);
+    mdLib.use(mdAttrs).use(mdFN);
 
   // Enable the markdown-it plugin with options from above
   eleventyConfig.setLibrary(`md`, markdownIt(mdOpts));
