@@ -26,7 +26,7 @@ export default async function(eleventyConfig) {
   // Enable the markdown-it plugin with options from above
   eleventyConfig.setLibrary(`md`, markdownIt(mdOpts));
   // Extend markdown-it via plugins; see https://www.11ty.dev/docs/languages/markdown/#optional-set-your-own-library-instance
-  // Most tutorials are written for Eleventy 1.0.0 and use the wrong syntax for v2.0.1 and later
+  // Most tutorials are written for Eleventy 1.0.0 and use the wrong syntax for v2.0.0 and later
   eleventyConfig.amendLibrary(`md`, markdownLib);
 
 	// Copy the contents of the `public` folder to the output folder
