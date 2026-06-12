@@ -664,6 +664,8 @@ form {
 
 .ol li {
 	margin-block-end: var(--s1);
+	padding: var(--s1);
+	box-shadow: 0 6px 24px oklch(0.1971 0.0912 276.64 / .15);
 }
 
 abbr:hover {
