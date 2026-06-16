@@ -13,7 +13,7 @@
 </section>
 
 <!-- Key points -->
-<section class="bg-cream" id="key-points">
+<section class="bg-key-pts" id="key-points">
   <div class="container">
     <p class="section-label">At a glance</p>
     <h2 class="section-title">Security that fits the way nonprofits actually work</h2>

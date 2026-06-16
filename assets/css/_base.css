@@ -132,15 +132,6 @@ header.site-header {
   color: var(--tb-navy);
 }
 
-.partner-name span {
-  display: block;
-  font-weight: 400;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--tb-text-secondary);
-}
-
 nav.main-nav {
   display: flex;
   align-items: center;
@@ -324,7 +315,7 @@ h2.section-title {
 
 
 /* Key points cards */
-.bg-cream {
+.bg-key-pts {
   background: var(--tb-beige-lite);
 }
 
@@ -573,46 +564,11 @@ h2.section-title {
   box-shadow: 0 10px 36px rgba(14,11,61,0.08);
 }
 
-.form-row {
-  margin-block-end: 20px;
-}
-
-.form-row label {
-  display: block;
-  margin-block-end: 8px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--tb-navy);
-}
-
-.form-row input,
-.form-row textarea,
-.form-row select {
-  inline-size: 100%;
-  padding-inline: 16px;
-  padding-block: 13px;
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-size: 0.95rem;
-  color: var(--tb-text);
-  background: #fff;
-  border: 1.5px solid #ddd4c4;
-  border-radius: 10px;
-}
-
-.form-row input:focus,
-.form-row textarea:focus,
-.form-row select:focus {
-  outline-color: none;
-  border-color: var(--tb-blue);
-}
-
-.required-note {
-  margin-block-end: 26px;
-  font-size: 0.82rem;
+#tfa_24-HTML {
+  font-family: Montserrat, system-ui, sans-serif!important;
+  font-size: 0.82rem!important;
   font-style: italic;
-  color: var(--tb-text-secondary);
+  color: var(--tb-text-secondary)!important;
 }
 
 
