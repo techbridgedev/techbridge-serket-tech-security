@@ -119,7 +119,7 @@
   <div class="container">
     <div class="webinar">
       <div>
-        <span class="date-chip">Free Webinar &middot; September 2026</span>
+        <span class="date-chip">Free Webinar &middot; <time datetime="2026-09">September 2026</time></span>
         <h2>Protecting the people nonprofits serve</h2>
         <p>A free conversation for nonprofit leaders on practical cybersecurity. No sales pitch. No jargon.</p>
       </div>
